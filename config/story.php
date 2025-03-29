@@ -3,7 +3,7 @@
 use Prism\Prism\Enums\Provider;
 
 return [
-    'max_story_length' => 100, // Max characters in the story
+    'max_story_length' => env('STORY_MAX_LENGTH', 2000), // Max characters in the story
     'default_llm_provider' => Provider::Groq,
     'default_llm_model' => 'deepseek-r1-distill-qwen-32b',
 
