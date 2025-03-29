@@ -68,7 +68,7 @@ class StoryElementController extends Controller
                 $filename = uniqid() . '.' . $extension;
 
                 // Save the image
-                Storage::disk('public')->put(
+                Storage::put(
                     'story-elements/' . $filename,
                     $response->body()
                 );
@@ -121,7 +121,7 @@ class StoryElementController extends Controller
         // Delete associated images if they exist
         if ($storyElement->image) {
             $filename = basename($storyElement->image);
-            Storage::disk('public')->delete([
+            Storage::delete([
                 'story-elements/' . $filename,
                 'story-elements/thumbnails/' . $filename
             ]);
@@ -222,7 +222,7 @@ class StoryElementController extends Controller
             $filename = 'stories/' . uniqid() . '.mp3';
 
             // Save the audio file to storage
-            Storage::disk('public')->put($filename, $elevenLabsResponse->body());
+            Storage::put($filename, $elevenLabsResponse->body());
 
             // Create a new story record
             $story = \App\Models\Story::create([
