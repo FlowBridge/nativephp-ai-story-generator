@@ -2,6 +2,8 @@
 
 A Laravel + Inertia application that generates personalized stories for kids, complete with text-to-speech narration. Built as a native iOS application using NativePHP.
 
+> ⚠️ **Important Notice**: This application is currently not functioning within NativePHP iOS due to pending storage system fixes from the NativePHP team. The web version works perfectly, and we'll update this notice once NativePHP resolves the storage system issues.
+
 ## Demo
 
 ![Demo](/docs/demo.gif)
