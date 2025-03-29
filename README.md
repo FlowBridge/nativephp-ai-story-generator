@@ -2,6 +2,12 @@
 
 A Laravel + Inertia application that generates personalized stories for kids, complete with text-to-speech narration. Built as a native iOS application using NativePHP.
 
+## Demo
+
+![Demo](/docs/demo.gif)
+
+[View full demo video (With Audio)](docs/demo.mp4)
+
 ## Features
 
 - 🎨 Story generation using LLM (powered by Prism)
