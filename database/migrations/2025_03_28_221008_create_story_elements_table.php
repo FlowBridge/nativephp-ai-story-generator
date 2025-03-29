@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->foreignId('type_id')->constrained('story_element_types');
+            $table->foreignId('type_id');
             $table->timestamps();
         });
     }
